@@ -32,7 +32,7 @@
         "colab_type": "text"
       },
       "source": [
-        "<a href=\"https://colab.research.google.com/github/tsangrebecca/BloomTech/blob/main/Sprint6/Module4/JDS_SHR_224_guided_project_notes_TanzaniaWaterPumpCaseStudyConfusionMatrixPrecisionRecallClassificationThresholdsPredictedProbailities.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+        "<a href=\"https://colab.research.google.com/github/tsangrebecca/projects_from_BloomTech/blob/main/Predicting_whether_water_pump_in_Tanzania_needs_repair\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
       ]
     },
     {
@@ -68,7 +68,7 @@
         "%%capture\n",
         "!pip install category_encoders==2.*"
       ],
-      "execution_count": 1,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -79,7 +79,7 @@
       "metadata": {
         "id": "GUms3wDK1m47"
       },
-      "execution_count": 2,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -94,7 +94,7 @@
         "id": "S2w_Jof-1tkE",
         "outputId": "8d16b0b8-b238-434d-894b-6c1861aa632a"
       },
-      "execution_count": 3,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -118,7 +118,7 @@
         "id": "fKn1sp3-1-DM",
         "outputId": "6e1d8e0f-a6be-411d-d879-72afc8d608bc"
       },
-      "execution_count": 33,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -164,7 +164,7 @@
       "metadata": {
         "id": "HD2zFOZ616xM"
       },
-      "execution_count": 2,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -188,7 +188,7 @@
         "import pandas as pd\n",
         "import matplotlib.pyplot as plt"
       ],
-      "execution_count": 3,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -391,7 +391,7 @@
         "\n",
         "X_test = wrangle(fm_path='test_features.csv')"
       ],
-      "execution_count": 4,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -415,7 +415,7 @@
         "id": "4JvbJd1QRwje",
         "outputId": "e613967d-014c-4364-e5b6-7626ae59c633"
       },
-      "execution_count": 4,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -460,7 +460,7 @@
       "metadata": {
         "id": "0wlFRLiTrTBZ"
       },
-      "execution_count": 5,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -501,7 +501,7 @@
         "id": "wD0vQE2pZsgT",
         "outputId": "d6fc5932-33e3-44e1-c00c-7cd60316aaac"
       },
-      "execution_count": 8,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -541,7 +541,7 @@
         "# Sanity check\n",
         "assert len(X_train) + len(X_val) == len(X)"
       ],
-      "execution_count": 5,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -565,7 +565,7 @@
       "source": [
         "print('Baseline Accuracy:', y_train.value_counts(normalize=True).max())"
       ],
-      "execution_count": 17,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -604,7 +604,7 @@
         },
         "outputId": "6e41841c-17f0-47e2-a288-d849bf3ca92a"
       },
-      "execution_count": 6,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -776,7 +776,7 @@
         },
         "outputId": "d0f692fb-1957-4d47-9bd4-eba1e47715f3"
       },
-      "execution_count": 19,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -843,7 +843,7 @@
         "print('Training Accuracy:', model.score(X_train, y_train))\n",
         "print('Validation Accuracy:', model.score(X_val, y_val))"
       ],
-      "execution_count": 13,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -890,7 +890,7 @@
         "print('Training Accuracy:', model.score(X_train, y_train))\n",
         "print('Validation Accuracy:', model.score(X_val, y_val))"
       ],
-      "execution_count": 20,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -992,7 +992,7 @@
         "    # we are evaluating our model with validation data set, something the model hasn't seen before! And it also needs to have the true labels in it. so we can't use the\n",
         "    # training set and we can't use the test set without labels"
       ],
-      "execution_count": 19,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -1048,7 +1048,7 @@
         "id": "Tbj8TgM4j-8q",
         "outputId": "ed97dd7e-4d11-499d-d4de-1407f0f69f7e"
       },
-      "execution_count": 10,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -1096,7 +1096,7 @@
         },
         "outputId": "07a40d8e-b35d-4996-ac77-8b07c17faf78"
       },
-      "execution_count": 11,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -1144,7 +1144,7 @@
         },
         "outputId": "6cfc77f0-621c-4931-c851-1f31cf429dfd"
       },
-      "execution_count": 12,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -1185,7 +1185,7 @@
         },
         "outputId": "b131d91f-16ff-4441-e6b5-d3ff45b89602"
       },
-      "execution_count": 14,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -1217,7 +1217,7 @@
         },
         "outputId": "ed5b0906-0c5f-43d4-eb58-dd59b9c43826"
       },
-      "execution_count": 15,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -1281,7 +1281,7 @@
       "metadata": {
         "id": "C-Zd7BTYqq6n"
       },
-      "execution_count": 17,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -1306,7 +1306,7 @@
         },
         "outputId": "5596b237-d3ca-4839-ce41-9abf2586684e"
       },
-      "execution_count": 18,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -1335,7 +1335,7 @@
         },
         "outputId": "c527576c-eb59-4846-a903-8f4e5ea6c7b8"
       },
-      "execution_count": 21,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -1366,7 +1366,7 @@
         "       # inspected pumps - pumps repaired are the pump inspections wasted, each pump inspection costs $100\n",
         "       # we need int because pump is a whole number"
       ],
-      "execution_count": 25,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -1387,7 +1387,7 @@
       "metadata": {
         "id": "yP4XNhrSw4fg"
       },
-      "execution_count": 26,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -1413,7 +1413,7 @@
       "metadata": {
         "id": "GDW3853cqlpe"
       },
-      "execution_count": 27,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -1429,7 +1429,7 @@
         "id": "LpZHmTD64OHc",
         "outputId": "d1ff73f1-c0af-48ab-a82b-9a1e30fea704"
       },
-      "execution_count": 31,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -1727,7 +1727,7 @@
       "metadata": {
         "id": "o64ZB62PqmiX"
       },
-      "execution_count": 28,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -1744,7 +1744,7 @@
         "print('Pumps repaired:', int(sample['y_val'].sum())) # sum of the actual values column in the sample dataframe where all the predictions say repair needed, see how many match\n",
         "print('Funds wasted:', int((n_inspections - sample['y_val'].sum()))*100)"
       ],
-      "execution_count": 29,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -1765,7 +1765,7 @@
       "metadata": {
         "id": "W4mgFhl11SkG"
       },
-      "execution_count": 30,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -1805,7 +1805,7 @@
         "id": "Ggo_CuMj4bJ7",
         "outputId": "be72e564-bfdc-4c9c-f902-a79fd823a39f"
       },
-      "execution_count": 32,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -1838,7 +1838,7 @@
         "\n",
         "results =pd.DataFrame(data)"
       ],
-      "execution_count": 33,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -1849,7 +1849,7 @@
       "metadata": {
         "id": "Im5juTHQqdgb"
       },
-      "execution_count": 35,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -1861,7 +1861,7 @@
         "mask = (results['y_pred_proba'] > threshold)\n",
         "sample = results[mask].sample(n_inspections) # same concept as scenario 2"
       ],
-      "execution_count": 37,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -1879,7 +1879,7 @@
         "print('Funds wasted:', int(n_inspections - sample['y_val'].sum())*100)\n",
         "# wasted even less money because we're more aggressive with saving money and increasing precision"
       ],
-      "execution_count": 38,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
